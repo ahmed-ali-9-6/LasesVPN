@@ -1,0 +1,253 @@
+:root {
+  --color-redorange: #f53838;
+  --color-verydark-blue: #0b132a;
+  --color-gray: #4f5665;
+  --color-bg: #f8f8f8;
+  --color-white: #fff;
+}
+/**********************/
+/* BELOW 1080px (smaller desktops),(Landscape Tablets)*/
+/**********************/
+
+@media (max-width: 1080px) {
+  .price-plans {
+    grid-template-columns: 1fr;
+  }
+
+  .plan {
+    width: 80%;
+  }
+
+  .sponsor-img-box {
+    width: 80%;
+  }
+
+  .testimonial {
+    margin: auto 2.9rem;
+    min-width: 90%;
+  }
+
+  .testimonial-column-two {
+    padding-bottom: 8.8rem;
+  }
+
+  .testimonial-column-three {
+    padding-bottom: 5.9rem;
+  }
+}
+
+/**********************/
+/* BELOW 944px (Tablets)*/
+/**********************/
+
+@media (max-width: 944px) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav-list {
+    gap: 2rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .about-icon-box::before {
+    left: -13px;
+    top: -12px;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  .testimonial {
+    margin: auto 2.9rem;
+    min-width: 90%;
+  }
+
+  .testimonial-column-two {
+    padding-bottom: 8.8rem;
+  }
+
+  .testimonial-column-three {
+    padding-bottom: 5.9rem;
+  }
+
+  .social-item::after {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .social-icon {
+    position: absolute;
+    top: -28px;
+    left: -2px;
+  }
+}
+
+/**********************/
+/* BELOW 700px (Smaller Tablets)*/
+/**********************/
+
+@media (max-width: 700px) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .header {
+    align-items: flex-start;
+  }
+
+  .sign {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 500;
+  }
+
+  .sign-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  /* burger menu */
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.75rem;
+    z-index: 0;
+    align-self: center;
+  }
+
+  .burger-menu__bar {
+    height: 0.3rem;
+    width: 4.375rem;
+    background-color: black;
+    transition: 0.3s;
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {
+    transform: translateY(7px) rotate(40deg);
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-40deg);
+  }
+
+  .header:has(.burger-menu__checkbox:checked) .navigation {
+    top: 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    z-index: 0;
+  }
+
+  .navigation {
+    position: absolute;
+    left: 8%;
+    width: 80%;
+    top: 0;
+    background-color: white;
+    padding: 2rem 0;
+    z-index: -1;
+    margin-top: 0.5rem;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+
+  .about-icon-box::before {
+    left: -11px;
+    top: -10px;
+  }
+
+  .testimonial {
+    margin: auto 2rem;
+    min-width: 100%;
+  }
+
+  .testimonial-column-two {
+    padding-bottom: 8.8rem;
+  }
+
+  .testimonial-column-three {
+    padding-bottom: 5.9rem;
+  }
+
+  .scroll {
+    margin-bottom: 25rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5rem;
+  }
+
+  .logo-col {
+    margin-right: 9rem;
+    grid-row: 2 / 3;
+    grid-column: 1 / -2;
+  }
+
+  .social-item::after {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .social-icon {
+    top: -27px;
+    left: -4px;
+  }
+}
+
+/**********************/
+/* BELOW 526px (Phones)*/
+/**********************/
+
+@media (max-width: 526px) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .about-column {
+    gap: 3rem;
+  }
+
+  .about-icon-box::before {
+    left: -10px;
+    top: -9px;
+  }
+
+  .scroll {
+    margin-bottom: 25rem;
+  }
+
+  .action {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .footer-content {
+    padding-top: 22rem;
+  }
+
+  .social-icon {
+    top: -27px;
+    left: -6px;
+  }
+}
